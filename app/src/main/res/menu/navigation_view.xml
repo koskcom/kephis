@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/our_services">
+        <menu>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Phyto-Sanitary Services" />
+            <item
+                android:id="@+id/nav_sed"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Seed Certification Services" />
+
+            <item
+                android:id="@+id/nav_analytical_chemistry"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Analytical Chemistry and Food Services" />
+            <item
+                android:id="@+id/nav_service_charter"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Service Charter" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="About Us">
+        <menu>
+            <item
+                android:id="@+id/nav_board_ofDirectors"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Board Of Directors" />
+            <item
+                android:id="@+id/nav_organization_structure"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Organization Structure" />
+
+            <item
+                android:id="@+id/nav_corporate_social_Resp"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Corporate Social Responsibility" />
+            <item
+                android:id="@+id/nav_milestones"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Milestones" />
+        </menu>
+    </item>
+
+</menu>

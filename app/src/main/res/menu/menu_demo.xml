@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btnlogout"
+        android:icon="@drawable/ic_logout_new_black_24dp"
+        android:title="Logout"
+        app:showAsAction="ifRoom" />
+
+    <!--<item
+        android:id="@+id/btm_3d"
+        android:icon="@drawable/ic_3d_rotation_black_24dp"
+        android:title="About"
+        app:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/btm_aboutus"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="About Us"
+        app:showAsAction="ifRoom" />
+ <!--   <item
+        android:id="@+id/btm_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Dashboard"
+        app:showAsAction="ifRoom" />-->
+</menu>

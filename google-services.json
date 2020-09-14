@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "894776804032",
+    "firebase_url": "https://kephis-c0515.firebaseio.com",
+    "project_id": "kephis-c0515",
+    "storage_bucket": "kephis-c0515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894776804032:android:a268670fdd2b64657a6325",
+        "android_client_info": {
+          "package_name": "bsl.co.ke.kephis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894776804032-6d79iidsqgsiq5iv58oskuei6isj1hfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARLiv_ArTx6HxCQkl9TIFU9na3YwVVcK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894776804032-6d79iidsqgsiq5iv58oskuei6isj1hfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

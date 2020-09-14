@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/margin_normal"
+    tools:context=".ui.Activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="244dp"
+            android:src="@drawable/kephislogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/blacklist"
+            android:text="Login Here"
+            android:textColor="@color/black"
+            android:textSize="28sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Enter username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Enter password"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/colorAccent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                app:endIconMode="password_toggle"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <CheckBox
+            android:id="@+id/rememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/remember_me"
+            android:textColor="@color/ms_black" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/ms_white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+<!--
+
+<com.google.android.material.textfield.TextInputLayout
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="12dp"
+android:hint="Clear text"
+app:endIconMode="clear_text"
+app:endIconTint="@color/colorPrimaryDark">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginBottom="12dp"
+android:hint="Custom end icon"
+app:endIconCheckable="true"
+android:id="@+id/custom_end_icon"
+app:endIconDrawable="@android:drawable/ic_input_add"
+app:endIconMode="custom"
+app:endIconTint="@color/colorPrimaryDark">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+
+
+    <!--
+
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ms_white_54_opacity"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".ui.activities.LoginActivity">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="320dp"
+                android:layout_height="244dp"
+                android:src="@drawable/kephislogo" />
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:mtf_cardCollapsedHeight="3dp"
+                app:mtf_image="@drawable/ic_gmail"
+                app:mtf_labelColor="@color/ms_black">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_email"
+                    android:singleLine="true"
+                    android:textColor="#34495e" />
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:mtf_cardCollapsedHeight="3dp"
+                app:mtf_image="@drawable/ic_password"
+                app:mtf_labelColor="@color/ms_black">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#34495e" />
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <CheckBox
+                android:id="@+id/rememberme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/remember_me"
+                android:textColor="@color/ms_black" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="324dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/ms_white"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </ScrollView>-->

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="bsl.co.ke.kephis"
+    android:installLocation="preferExternal"
+    android:versionCode="23"
+    android:versionName="KEPHIS vs 0.8">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".KEPHIS"
+        android:allowBackup="true"
+        android:icon="@drawable/logokephis"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logokephis"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+
+        <service
+            android:name=".services.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".services.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.Activities.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Common.DashboardActivity"
+            android:label="KEPHIS DASHBOARD"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Activities.LoginActivity"
+            android:label="Login Activity"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.ExportStepperActivities.ProducerActivity"
+            android:label="Exporter Producer Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.ExportStepperActivities.FacilityActivity"
+            android:label="Exporter facility Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.ExportStepperActivities.FarmActivity"
+            android:label="Exporter farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.ExportStepperActivities.ConsignmentActivity"
+            android:label="Exporter consignment Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step1"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".Dashboard"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.ExportListActivities.ActivityProducerListView"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step2"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step3"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step4"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step5"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Producer_Inspection_Step"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step6"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step7"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step8"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step9"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Farm_inspection_Step10"
+            android:label="Farm Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Producer_Inspection_Step1"
+            android:label="Producer Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Producer_Inspection_Step2"
+            android:label="Producer Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Producer_Inspection_Step3"
+            android:label="Producer Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Consignment_Inspection_Step1"
+            android:label="Consignment Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Consignment_Inspection_Step2"
+            android:label="Consignment Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Consignment_Inspection_Step3"
+            android:label="Consignment Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Consignment_Inspection_Step4"
+            android:label="Consignment Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Consignment_Inspection_Step5"
+            android:label="Consignment Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Facility_Inspection_step0"
+            android:label="Facility Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Facility_Inspection_step1"
+            android:label="Facility Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Facility_Inspection_step2"
+            android:label="Facility Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Facility_Inspection_step3"
+            android:label="Facility Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Facility_Inspection_step4"
+            android:label="Facility Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.Export_Facility_Inspection_step5"
+            android:label="Facility Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.ExportListActivities.ActivityFacilityListView"
+            android:label="Facility Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.ExportListActivities.ActivityFarmListView"
+            android:label="Farm Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.Views.Activities.ExportActivities.ExportListActivities.ActivityConsignmentListView"
+            android:label="Consignment Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+    </application>
+
+</manifest>

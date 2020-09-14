@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ourservices"
+            android:icon="@drawable/ic_our_services_24dp"
+            android:title="Our Services" />
+
+
+        <item
+            android:id="@+id/nav_phytosaniaryservices"
+            android:title="Phytosanitary services" />
+
+        <item
+            android:id="@+id/nav_seed_certificate"
+            android:title="Seed Certificate Services" />
+
+        <item
+            android:id="@+id/nav_analytical_chemistry"
+            android:title="Analytical Chemistry and Food services" />
+
+        <item
+            android:id="@+id/nav_service_charter"
+            android:title="Service Charter" />
+
+        <item
+            android:id="@+id/nav_About_us"
+            android:icon="@drawable/ic_about_us_black_24dp"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_board_ofDirectors"
+            android:title="Board  Of Directors" />
+
+
+        <item
+            android:id="@+id/nav_organization_structure"
+            android:title="Organization Structure" />
+
+
+        <item
+            android:id="@+id/nav_corporate_social_Resp"
+            android:title="Corporate Social Responsibility" />
+
+        <item
+            android:id="@+id/nav_milestones"
+            android:title="Milestones" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>
